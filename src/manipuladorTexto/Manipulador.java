@@ -14,9 +14,8 @@ public class Manipulador {
 		// TODO Auto-generated constructor stub
 	}
 
-	public List<String> ler() {
+	public List<String> ler(String caminhoArq) { //caminho do arquivo no disco
 		List<String> listStrings = new ArrayList<>(); // instancia um vetor de string
-		String caminhoArq = "/home/gabriel/"; //caminho do arquivo no disco
 		try {
 			FileReader arq = new FileReader(caminhoArq);
 			BufferedReader lerArq = new BufferedReader(arq);
